@@ -193,7 +193,6 @@ html {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    text-align: justify;
 }
 
 #name {
@@ -301,7 +300,6 @@ h2 {
     width: 100%;
     display: block;
     margin: 0 auto;
-    text-align: justify;
 }
 
 .list ul {
