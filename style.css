@@ -40,7 +40,8 @@ html {
 
 #navbar {
     width: 100%;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
     position: fixed;
     top: 0;
     height: 40px;
@@ -139,7 +140,7 @@ html {
     box-shadow: 0px 0px 0px black !important;
 }
 
-#itchsocial {
+#itchsocial:hover {
     box-shadow: 0px 0px 5px rgb(0, 0, 0) !important;
 }
 
@@ -161,9 +162,10 @@ html {
 
 #name {
     font-size: 80px;
-    margin: 10px;
+    margin: 0;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5px;
 }
 
 #tagline {
@@ -173,11 +175,16 @@ html {
     font-weight: 100;
 }
 
+#e {
+    color: rgba(0, 0, 0, 0);
+}
+
 #about,
 #projects {
     background: #1b2027;
     align-self: center;
     margin-top: 60px;
+    margin-bottom: 60px;
     width: 90%;
     padding: 20px;
     position: relative;
@@ -218,6 +225,8 @@ html {
 #gif {
     width: 40%;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 #gif img {
@@ -265,6 +274,7 @@ html {
 
 .card a img {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .projectname a {
@@ -273,4 +283,90 @@ html {
     font-size: 20px;
     text-decoration: none;
     text-align: center;
+}
+
+@media(max-width:800px) {
+    #homepage {
+        background-image: linear-gradient(rgba(0, 1, 41, 0.6), rgba(2, 62, 138, 0.6)), url('bg img 2.png');
+    }
+    #name {
+        font-size: 65px;
+    }
+    #tagline {
+        font-size: 16px;
+    }
+    .heading {
+        font-size: 35px;
+    }
+    .subheading {
+        font-size: 25px;
+    }
+    #introduction {
+        width: 45%;
+        padding: 5px;
+    }
+    #description {
+        font-size: 15px;
+    }
+    #lenk {
+        font-size: 17px;
+    }
+    #gif {
+        width: 53%;
+    }
+    #gif img {
+        width: 100%;
+    }
+    .projectname a {
+        font-size: 17px;
+    }
+    .card a img {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+}
+
+@media(max-width:600px) {
+    #name {
+        font-size: 11vw;
+    }
+    #tagline {
+        font-size: 16px;
+    }
+    .heading {
+        font-size: 35px;
+    }
+    .subheading {
+        font-size: 25px;
+    }
+    #introduction {
+        width: 95%;
+        padding: 5px;
+    }
+    #description {
+        font-size: 15px;
+    }
+    #lenk {
+        font-size: 17px;
+    }
+    #gif {
+        margin-top: 20px;
+        width: 90%;
+    }
+    #gif img {
+        width: 100%;
+    }
+    .projectname a {
+        font-size: 17px;
+    }
+    .card a img {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+}
+
+@media(max-width:450px) {
+    #homepage {
+        background-image: linear-gradient(rgba(0, 1, 41, 0.6), rgba(2, 62, 138, 0.6)), url('bg img 3.png');
+    }
 }
