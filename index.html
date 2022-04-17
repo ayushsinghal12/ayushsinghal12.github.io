@@ -11,19 +11,19 @@
 
 <body>
     <div id="container">
-        <!-- <div id="navbar">
+        <div id="navbar">
             <ul>
                 <li>
                     <a href="#">HOMEPAGE</a>
                 </li>
                 <li>
-                    <a href="#">PROJECTS</a>
+                    <a href="#about">ABOUT ME</a>
                 </li>
                 <li>
-                    <a href="#">CONTACT</a>
+                    <a href="#projects">PROJECTS</a>
                 </li>
             </ul>
-        </div> -->
+        </div>
         <div id="footer">
             <ul>
                 <li>
@@ -37,25 +37,66 @@
                 </li>
             </ul>
         </div>
-        <div id="breadcrumbs">
-            <!-- <div id="breadcrumbsline"></div> -->
-            <div id="breadcrumbsoptions">
-                <!-- <ul>
-                    <li> -->
-                <a href="#" onclick="changetheme()"><img id="changetheme" src="sun logo.png"></a>
-                <!-- </li>
-                </ul> -->
+        <div id="homepage">
+            <div id="homepagecontent">
+                <h1 id="name">AYUSH SINGHAL</h1>
+                <h2 id="tagline">A web and game developer.</h2>
             </div>
         </div>
-        <div id="homepage">
-            <div id="introduction">
-                <h1 id="name">Ayush Singhal</h1>
-                <p id="description">Hello and welcome to my portfolio!
-                    <BR> I am Test Subject 007, or Ayush Singhal, if you prefer the real name. <br> I love learning, once a learner, always a learner.<br>I hope to become a software developer one day. I know <b>HTML, CSS, Javascript, Python, C#, C++.</b>
-                </p>
-                <a href="projects.html" id="lenk"><b>Click here to see some of my projects...</b></a>
+        <div id="about">
+            <h1 class="heading">ABOUT ME</h1>
+            <div id="introandgif">
+                <div id="introduction">
+                    <p id="description">Hello and welcome to my portfolio!
+                        <BR> I am Test Subject 007, or Ayush Singhal, if you prefer the real name. <br> I love learning, once a learner, always a learner.<br>I hope to become a software developer one day. I know <b>HTML, CSS, Javascript, Python, C#, C++.</b>
+                    </p>
+                    <a href="projects.html" id="lenk"><b>Click here to see some of my projects...</b></a>
+                </div>
+                <div id="gif"><img src="coding gif.gif"></div>
             </div>
-            <div id="gif"><img src="coding gif.gif"></div>
+        </div>
+        <div id="projects">
+            <h1 class="heading">PROJECTS</h1>
+            <div id="websites">
+                <h2 class="subheading" id="websiteheading">WEBSITES</h1>
+                    <div class="list">
+                        <div class="card">
+                            <a href="https://ayushsinghal12.github.io/OLD-PORTFOLIO/" target="blank" title="This is, as the name suggests, my old portfolio, made using HTML, CSS, Javascript."><img src="old portfolio.png"></a>
+                            <div class="projectname">
+                                <a href="https://ayushsinghal12.github.io/OLD-PORTFOLIO/" target="blank" title="This is, as the name suggests, my old portfolio, made using HTML, CSS, Javascript.">OLD PORTFOLIO</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://ayushsinghal12.github.io/A-PINCH-OF-SALT/" target="blank"><img src="a pinch of salt.png" title="'A Pinch of Salt' is a food blog made using HTML, CSS, Javascript."></a>
+                            <div class="projectname">
+                                <A href="https://ayushsinghal12.github.io/A-PINCH-OF-SALT/" target="blank" title="'A Pinch of Salt' is a food blog made using HTML, CSS, Javascript.">A PINCH OF SALT</A>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://ayushsinghal12.github.io/ZEN-TECH/" target="blank" title="'ZEN-TECH' is a dummy website for sale of a newly launched laptop, made using HTML, CSS, Javascript."><img src="zen tech.png"></a>
+                            <div class="projectname">
+                                <A href="https://ayushsinghal12.github.io/ZEN-TECH/" target="blank" title="'ZEN-TECH' is a dummy website for sale of a newly launched laptop, made using HTML, CSS, Javascript.">ZEN-TECH</A>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="games">
+                <h2 class="subheading" id="gameheading">GAMES</h1>
+                    <div class="list">
+                        <div class="card">
+                            <a href="https://mathchampion12.itch.io/snekiruhs" target="blank" title="Made in Unity using C#, as a submission to XINO gamejam, 'SNEKIRUHS' is a 3D first person ninja game, where you have to destroy all the targets before the time runs out to move to the next level."><img src="snekiruhs.png"></a>
+                            <div class="projectname">
+                                <a href="https://mathchampion12.itch.io/snekiruhs" target="blank" title="Made in Unity using C#, as a submission to XINO gamejam, 'SNEKIRUHS' is a 3D first person ninja game, where you have to destroy all the targets before the time runs out to move to the next level.">SNEKIRUHS</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://mathchampion12.itch.io/salvage" target="blank" title="Made in Unity using C#, as a submission to GJL Game Parade Spring 2022, 'SALVAGE' is a 3D first person shooter game, where you have to kill all the enemies, collect all coins and save everyone to move to the next level."><img src="salvage.png"></a>
+                            <div class="projectname">
+                                <A href="https://mathchampion12.itch.io/salvage" target="blank" title="Made in Unity using C#, as a submission to GJL Game Parade Spring 2022, 'SALVAGE' is a 3D first person shooter game, where you have to kill all the enemies, collect all coins and save everyone to move to the next level.">SALVAGE</A>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
     </div>
     <script src="app.js"></script>
