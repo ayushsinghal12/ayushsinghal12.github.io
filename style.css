@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: black;
+    background: #041C32;
     transition: 0.2s;
 }
 
@@ -20,7 +20,7 @@ html {
 }
 
 .heading {
-    color: orange;
+    color: #ECB365;
     font-size: 45px;
     margin: 0;
     text-align: center;
@@ -203,7 +203,7 @@ html {
 #tagline {
     font-size: 20px;
     margin: 0;
-    color: lightgrey;
+    color: rgb(214, 214, 214);
     font-weight: 100;
 }
 
@@ -213,7 +213,7 @@ html {
 
 #about,
 #projects {
-    background: #1b2027;
+    background: #04293A;
     align-self: center;
     margin-top: 60px;
     margin-bottom: 60px;
