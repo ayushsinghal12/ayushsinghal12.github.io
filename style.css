@@ -237,7 +237,6 @@ html {
 
 #introduction {
     width: 50%;
-    height: auto;
     padding: 20px;
     position: relative;
     align-self: center;
@@ -252,6 +251,12 @@ html {
 #lenk {
     color: #fffccb;
     font-size: 20px;
+    text-decoration: none;
+    background: #021721;
+    padding: 12px;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
 }
 
 #gif {
@@ -311,7 +316,7 @@ html {
 
 .projectname a {
     font-family: sans-serif;
-    color: pink;
+    color: rgb(255, 255, 194);
     font-size: 20px;
     text-decoration: none;
     text-align: center;
@@ -384,9 +389,10 @@ html {
     }
     #lenk {
         font-size: 17px;
+        padding: 5px;
     }
     #gif {
-        margin-top: 20px;
+        margin-top: 40px;
         width: 90%;
     }
     #gif img {
