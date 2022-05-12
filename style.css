@@ -28,11 +28,11 @@ html {
 }
 
 .subheading {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     text-align: center;
     font-size: 30px;
-    color: #fff780;
+    color: #fff44f;
 }
 
 
@@ -136,7 +136,7 @@ html {
     text-decoration: none;
     transition: 0.2s;
     background: #30475E;
-    color: #fff780;
+    color: #fff44f;
     transition: 0.2s;
     padding: 10px 5px;
     height: 40px;
@@ -149,7 +149,7 @@ html {
 
 #navbar ul li a:hover {
     color: #30475E;
-    background: #fff780;
+    background: #fff44f;
 }
 
 #footer ul li a img {
@@ -213,7 +213,7 @@ html {
 
 #about,
 #projects {
-    background: #04293A;
+    background: #092f40;
     align-self: center;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -243,13 +243,13 @@ html {
 }
 
 #description {
-    color: #fff780;
+    color: #fff44f;
     font-size: 18px;
     margin: 0;
 }
 
 #lenk {
-    color: #fffccb;
+    color: rgb(255, 255, 194);
     font-size: 20px;
     text-decoration: none;
     background: #02172179;
@@ -431,7 +431,7 @@ html {
         transition-duration: 0.5s;
         width: 100%;
         height: 200px;
-        background: rgba(211, 211, 211, 0.6);
+        background: rgba(211, 211, 211, 0.8);
     }
     .ulchange {
         visibility: visible !important;
