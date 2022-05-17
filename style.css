@@ -309,23 +309,83 @@ html {
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     margin: 20px;
     text-align: center;
 }
 
-.card a img {
+.card img {
+    height: 100%;
     width: 100%;
-    margin-bottom: 10px;
 }
 
-.projectname a {
-    font-family: sans-serif;
-    color: rgb(255, 255, 194);
-    font-size: 20px;
+.card .hover {
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    bottom: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+}
+
+.card .hover:hover>* {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.card .hover>* {
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(calc(-50% + 20px));
+}
+
+.hovertext {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card .hover:hover {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+}
+
+.projectname {
+    font-size: 1.7em;
+    color: #FFF44F;
+}
+
+.madein {
+    margin-top: 5px;
+    color: rgb(255, 255, 177);
+    background: rgba(7, 0, 66, 0.9);
+    font-size: 1.2em;
+}
+
+.info {
+    margin-top: 40px;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+.gothere {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    text-align: center;
+    background: navy;
+    padding: 8px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
 }
 
 @media(max-width:800px) {
@@ -359,9 +419,6 @@ html {
     }
     #gif img {
         width: 100%;
-    }
-    .projectname a {
-        font-size: 17px;
     }
     .card a img {
         width: 100%;
@@ -403,9 +460,6 @@ html {
     }
     #gif img {
         width: 100%;
-    }
-    .projectname a {
-        font-size: 17px;
     }
     .card a img {
         width: 100%;
