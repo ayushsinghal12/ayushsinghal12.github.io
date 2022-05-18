@@ -128,7 +128,7 @@ html {
 
 #footer ul li:hover {
     position: relative;
-    bottom: 5px;
+    bottom: 4px;
     transform: scale(1.1, 1.1);
     opacity: 1;
 }
@@ -155,27 +155,32 @@ html {
 
 #footer ul li a img {
     width: 50px;
-    box-shadow: 0px 0px 0px rgb(255, 255, 255);
     border-radius: 100%;
     transition: 0.1s linear;
 }
 
-#footer ul li a img:hover {
-    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+#discordsocial {
+    width: 40px !important;
+}
+
+#mailsocial {
+    width: 45px !important
+}
+
+#itchsocial {
+    filter: invert(1);
+    width: 40px !important;
+    transform: translateY(-2px);
+}
+
+#githubsocial {
+    filter: invert(1);
+    width: 37px !important;
+    transform: translateY(-3px);
 }
 
 
 /* home page, about page and projects page */
-
-#itchsocial {
-    filter: invert(1);
-    width: 45px !important;
-    box-shadow: 0px 0px 0px black !important;
-}
-
-#itchsocial:hover {
-    box-shadow: 0px 0px 5px rgb(0, 0, 0) !important;
-}
 
 #homepage {
     width: 100%;
@@ -515,20 +520,12 @@ html {
     }
     #footer ul li a img {
         width: 35px;
-        box-shadow: 0px 0px 0px rgb(255, 255, 255);
         border-radius: 100%;
         transition: 0.1s linear;
-    }
-    #footer ul li a img:hover {
-        box-shadow: 0px 0px 3px rgb(255, 255, 255);
     }
     #itchsocial {
         filter: invert(1);
         width: 35px !important;
-        box-shadow: 0px 0px 0px black !important;
-    }
-    #itchsocial:hover {
-        box-shadow: 0px 0px 3px rgb(0, 0, 0) !important;
     }
     #footer ul li:hover {
         position: relative;
