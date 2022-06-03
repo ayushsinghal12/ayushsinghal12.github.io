@@ -43,8 +43,6 @@ html {
     width: 100%;
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 1px;
-    position: fixed;
-    top: 0;
     height: 40px;
     background: #30475E;
     z-index: 5;
@@ -52,15 +50,20 @@ html {
     justify-content: center;
 }
 
-#menu {
+.sticky {
     position: fixed;
+    top: 0
+}
+
+#menu {
     z-index: 5;
-    top: 5px;
-    left: 5px;
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    position: absolute;
+    left: 5px;
+    top: 5px
 }
 
 #menu div {
@@ -87,11 +90,45 @@ html {
 #footer {
     width: 100%;
     font-family: sans-serif;
-    position: fixed;
-    bottom: 10px;
     z-index: 5;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+}
+
+#downarrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 3000ms infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+#downarrow img {
+    width: 20px;
+    height: 20px;
 }
 
 #navbar ul,
@@ -213,10 +250,6 @@ html {
     font-weight: 100;
 }
 
-#e {
-    color: rgba(0, 0, 0, 0);
-}
-
 #about,
 #projects {
     background: #092f40;
@@ -232,6 +265,7 @@ html {
 
 #projects {
     display: block;
+    margin-bottom: 20px !important;
 }
 
 #introandgif {
@@ -485,24 +519,25 @@ html {
     #menu {
         visibility: visible;
         opacity: 1;
+        position: relative;
     }
     #navbar ul {
-        margin-top: 50px;
-        visibility: hidden;
-        opacity: 0;
+        visibility: visible;
+        opacity: 1;
         flex-direction: column;
         position: relative;
-        top: -10px;
-        left: -420px;
+        left: -440px;
+        margin-top: 40px;
+        z-index: 10;
         transition-duration: 0.5s;
-        width: 100%;
+        width: 100vw;
         height: 200px;
-        background: rgba(211, 211, 211, 0.8);
+        background: rgba(211, 211, 211, 0.95);
     }
     .ulchange {
         visibility: visible !important;
         opacity: 1 !important;
-        left: 0 !important;
+        left: -32px !important;
     }
     #navbar ul li {
         margin-top: 20px;
