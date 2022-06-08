@@ -17,7 +17,9 @@ var sticky = navbar.offsetTop;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
+        navbar.style.display = "flex"
     } else {
         navbar.classList.remove("sticky");
+        navbar.style.display = "none"
     }
 }
