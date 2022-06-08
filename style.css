@@ -321,7 +321,8 @@ html {
     color: rgb(236, 255, 255)
 }
 
-#lenk {
+
+/* #lenk {
     font-size: 20px;
     text-decoration: none;
     background: #010b12;
@@ -336,7 +337,7 @@ html {
 
 #lenk:hover {
     background: #02080d;
-}
+} */
 
 #gif {
     width: 40%;
@@ -492,9 +493,9 @@ html {
     #description {
         font-size: 15px;
     }
-    #lenk {
+    /* #lenk {
         font-size: 17px;
-    }
+    } */
     #gif {
         width: 53%;
     }
@@ -531,10 +532,10 @@ html {
     #description {
         font-size: 15px;
     }
-    #lenk {
+    /* #lenk {
         font-size: 17px;
         padding: 5px;
-    }
+    } */
     #gif {
         margin-top: 40px;
         width: 90%;
