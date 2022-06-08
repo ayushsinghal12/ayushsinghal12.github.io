@@ -9,7 +9,7 @@ body {
 }
 
 * {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -24,7 +24,7 @@ html {
     color: rgb(236, 255, 255);
     font-size: 45px;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     width: 100%;
 }
@@ -43,7 +43,7 @@ html {
 }
 
 .subheading {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: 2.5px;
     margin: 0;
     text-align: center;
@@ -273,8 +273,9 @@ html {
     font-size: 80px;
     margin: 0;
     color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Baloo Da 2', cursive;
     letter-spacing: 1.5px;
+    line-height: 60px;
 }
 
 #tagline {
@@ -282,6 +283,7 @@ html {
     margin: 0;
     color: rgb(214, 214, 214);
     font-weight: 100;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #about,
@@ -328,7 +330,8 @@ html {
     position: relative;
     top: 20px;
     transition: 0.1s;
-    color: #BCEAEA
+    color: #BCEAEA;
+    font-family: 'Quicksand', sans-serif !important;
 }
 
 #lenk:hover {
@@ -441,6 +444,7 @@ html {
     display: inline;
     padding: 1px 10px;
     font-size: 17px;
+    font-weight: bold;
 }
 
 .info {
