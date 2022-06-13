@@ -75,6 +75,9 @@ html {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    animation: appear linear 0.2s forwards;
+    animation-delay: 0.2s;
+    visibility: hidden;
 }
 
 #menu {
@@ -184,6 +187,8 @@ html {
     font-family: sans-serif;
     font-weight: bold;
     letter-spacing: 0.05cm;
+    animation: appear linear 0.3s forwards;
+    visibility: hidden;
 }
 
 #footer ul li {
@@ -212,7 +217,26 @@ html {
     text-decoration: none;
     transition: 0.2s;
     color: rgb(109, 149, 149);
-    transition: 0.3s;
+    transition: 0.2s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        visibility: visible;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#navbar ul li:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+#navbar ul li:nth-child(2) {
+    animation-delay: 0.6s;
 }
 
 #navbar ul li a:hover {
@@ -299,6 +323,68 @@ html {
 #projects {
     display: block;
     margin-bottom: 20px !important;
+}
+
+#imganddesc {
+    width: 50%;
+    text-align: center;
+}
+
+#igotnonamexd {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#imagesandtext {
+    display: flex;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mainimg {
+    width: 500px;
+    height: 350px;
+    animation: slideshow 10s infinite linear;
+}
+
+#hobbies {
+    color: #ECFFFF;
+    margin-bottom: 5px;
+}
+
+@keyframes slideshow {
+    0% {
+        transform: translateX(0);
+    }
+    26% {
+        transform: translateX(0);
+    }
+    34% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-100%);
+    }
+    68% {
+        transform: translateX(-200%);
+    }
+    94% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.normaltext {
+    margin-top: 5px;
+    font-size: 20px;
+    transform: translateX(-100%);
+    animation: slideshow 10s infinite linear;
 }
 
 #introandgif {
