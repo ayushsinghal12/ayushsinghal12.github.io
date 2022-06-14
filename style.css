@@ -348,7 +348,7 @@ html {
 .mainimg {
     width: 500px;
     height: 350px;
-    animation: slideshow 10s infinite linear;
+    animation: slideshow 10s infinite ease-in-out;
 }
 
 #hobbies {
@@ -384,7 +384,7 @@ html {
     margin-top: 5px;
     font-size: 20px;
     transform: translateX(-100%);
-    animation: slideshow 10s infinite linear;
+    animation: slideshow 10s infinite ease-in-out;
 }
 
 #introandgif {
@@ -548,12 +548,17 @@ html {
 .gothere {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    background: navy;
+    background: rgba(0, 0, 53, 0.5);
     padding: 8px;
     font-size: 15px;
     margin-top: 20px;
-    color: red;
+    color: #ECFFFF;
     font-weight: bold;
+    transition: 0.2s;
+}
+
+.gothere:hover {
+    background: rgba(0, 0, 53, 0.7);
 }
 
 @media(max-width:800px) {
