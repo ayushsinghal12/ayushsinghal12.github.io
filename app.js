@@ -23,24 +23,3 @@ function myFunction() {
         navbar.style.display = "none"
     }
 }
-
-// var texts = ["CRICKET", "CHESS", "MATH"]
-// var imgs = ["cricket.jpg", "chess.jpg", "math.jpg"]
-// var mainimg = document.getElementById("mainimg")
-// var imgdesc = document.getElementById("imgdesc")
-// var imganddesc = document.querySelector("#imganddesc")
-// var time = 2500
-// var i = 0
-
-// setTimeout("changeimg()", time)
-
-// function changeimg() {
-//     if (i < imgs.length - 1) {
-//         i++
-//     } else {
-//         i = 0
-//     }
-//     mainimg.src = imgs[i]
-//     imgdesc.innerHTML = texts[i]
-//     setTimeout("changeimg()", time)
-// }
