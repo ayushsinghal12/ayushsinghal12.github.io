@@ -3,9 +3,9 @@ function menuchange() {
     var menubar2 = document.querySelector('#bar2')
     var menubar3 = document.querySelector('#bar3')
     var ul = document.querySelector('#navbar ul')
-    menubar1.classList.toggle('bar1change')
-    menubar2.classList.toggle('bar2change')
-    menubar3.classList.toggle('bar3change')
+    menubar1.classList.toggle('bar1-change')
+    menubar2.classList.toggle('bar2-change')
+    menubar3.classList.toggle('bar3-change')
     ul.classList.toggle('ulchange')
 }
 
